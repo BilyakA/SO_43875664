@@ -21,7 +21,7 @@ private slots:
     void readSocket();
     void handleSocketError(QLocalSocket::LocalSocketError socketError);
 private:
-    QLocalSocket* dataSocket;
+    QLocalSocket dataSocket;
     QDataStream dataStream;
     dataStruct frame;
 };
